@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page Application</title>
+
+    <meta name="description" content="Single Page Application Demonstration">
+    <meta name="keywords" content="HTML, CSS, Simform, javascript, Single, Page, Application">
+    <meta name="author" content="Karansinh Raj">
+
+    <!-- bootstrap styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- my custom styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- my custom javascript -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container-fluid main">
+
+        <!-- start of navbar -->
+        <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Simform Solutions</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home-section">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about-section">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#images-section">Images</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#services-section">Services</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <!-- end of navbar -->
+
+        <!-- start of home section -->
+        <div id="home-section" class="container-fluid home">
+            <div class="row">
+                <div class="col header">
+                    <h1>Engineering the next best thing for the digital world</h1>
+                    <p>Agile in mind, spirit, and speed.</p>
+                    <button  id="know-more-btn" class="btn btn-outline-primary btn-lg">Know About Us</button>
+                </div>
+                <div class="col banner"></div>
+            </div>
+        </div>
+        <!-- end of home section -->
+
+        <!-- start of About Us section -->
+        <div id="about-section" class="container-fluid about">
+            <div class="row header">
+                <div class="col-auto">About Us</div>
+            </div>
+            <div class="row banner">
+                <div class="col"></div>
+            </div>
+            <div class="row content">
+                <div class="col">
+                    <h1>The extended team that is part of your team</h1>
+                    <p>
+                        Nearly every organization will need to become a tech company in order to compete tomorrow. Yes, even yours. At Simform, we are on a mission to help companies develop competitiveness and agility using the software.
+                        We are a tech company with a mission to help successful companies extend their tech capacity. Founded in 2010, we have helped organizations ranging from Startups that went public, to Fortune 500 companies, and WHO featured NGOs.
+                        Simform helps companies become innovation leaders by delivering software teams on demand. Our teams help you decide the right architecture and processes to follow and oversee the successful delivery of your software projects.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- end of About Us section -->
+
+        <!-- start of About Us section -->
+        <div id="images-section" class="container-fluid images">
+            <div class="row header">
+                <div class="col-auto">Images</div>
+            </div>
+            <div class="row content">
+
+                <div class="col-auto images-slider-container">
+                    <div class="my-slide">
+                        <div class="number-text">1 / 6</div>
+                        <img src="images/slider1.jpg" style="width:100%; height:100%;">
+                        <div class="text">Slider Image 1</div>
+                    </div>
+
+                    <div class="my-slide">
+                        <div class="number-text">2 / 6</div>
+                        <img src="images/slider2.jpg" style="width:100%; height:100%;">
+                        <div class="text">Slider Image 2</div>
+                    </div>
+
+                    <div class="my-slide">
+                        <div class="number-text">3 / 6</div>
+                        <img src="images/slider3.jpg" style="width:100%; height:100%;">
+                        <div class="text">Slider Image 3</div>
+                    </div>
+
+                    <div class="my-slide">
+                        <div class="number-text">4 / 6</div>
+                        <img src="images/slider4.jpg" style="width:100%; height:100%;">
+                        <div class="text">Slider Image 4</div>
+                    </div>
+
+                    <div class="my-slide">
+                        <div class="number-text">5 / 6</div>
+                        <img src="images/slider5.jpg" style="width:100%; height:100%;">
+                        <div class="text">Slider Image 5</div>
+                    </div>
+
+                    <div class="my-slide">
+                        <div class="number-text">6 / 6</div>
+                        <img src="images/slider6.jpg" style="width:100%; height:100%;">
+                        <div class="text">Slider Image 6</div>
+                    </div>
+                      
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+
+                </div>
+            </div>
+        </div>
+        <!-- end of About Us section -->
+
+        <!-- start of Services section -->
+        <div id="services-section" class="container-fluid services">
+            <div class="row header">
+                <div class="col-auto">Services</div>
+            </div>
+
+            <div class="row g-2 content">
+                <div class="col-auto">
+                    <div class="card">
+                        <img src="images/card-icon.svg" style="height: 5rem; width: 5rem;" class="card-img-top" alt="Card Icon">
+                        <p class="card-text">ASP .Net</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, quas.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/card-icon.svg" style="height: 5rem; width: 5rem;" class="card-img-top" alt="Card Icon">
+                        <p class="card-text">Core .Net</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, quas.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/card-icon.svg" style="height: 5rem; width: 5rem;" class="card-img-top" alt="Card Icon">
+                        <p class="card-text">UI/ UX Design</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, quas.</p>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="card">
+                        <img src="images/card-icon.svg" style="height: 5rem; width: 5rem;" class="card-img-top" alt="Card Icon">
+                        <p class="card-text">Java Technology</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, quas.</p>
+                    </div>
+                </div>
+
+                <div class="col-auto">
+                    <div class="card">
+                        <img src="images/card-icon.svg" style="height: 5rem; width: 5rem;" class="card-img-top" alt="Card Icon">
+                        <p class="card-text">React JS</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, quas.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/card-icon.svg" style="height: 5rem; width: 5rem;" class="card-img-top" alt="Card Icon">
+                        <p class="card-text">Angular JS</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, quas.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/card-icon.svg" style="height: 5rem; width: 5rem;" class="card-img-top" alt="Card Icon">
+                        <p class="card-text">PHP Backend</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, quas.</p>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="card">
+                        <img src="images/card-icon.svg" style="height: 5rem; width: 5rem;" class="card-img-top" alt="Card Icon">
+                        <p class="card-text">Dev Ops</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, quas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of Services section -->
+    </div>
+
+    <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
