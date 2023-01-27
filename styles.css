@@ -4,6 +4,7 @@
     --homeBackground: #f3f3f3;
     --aboutBackground: #f3f7fb;
     --imagesBackground: #fffbf7;
+    --servicesBackground: #f3f7fb;
     --lightText: #FFFFFF;
     --darkText: #000000;
 }
@@ -161,7 +162,7 @@ body{
 }
 
 .services{
-    background-color: var(--imagesBackground);
+    background-color: var(--servicesBackground);
     height: auto;
     width: 100%;
     padding-bottom: 12rem;
