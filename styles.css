@@ -27,6 +27,9 @@ body{
     width: 100%;
     height: auto;
 }
+.navbar{
+    width: 100%;
+}
 .home{
     height: auto;
     width: 100%;
@@ -49,6 +52,8 @@ body{
 .home .row .banner{
     background-image: url(images/hero-banner.webp);
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
     height: 40rem;
     width: 100%;
 }
@@ -74,12 +79,12 @@ body{
 }
 .about .banner{
     height: 40rem;
-    width: 100%;
 }
 .about .banner .col{
     background-image: url(images/about-banner.webp);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
 }
 .about .content .col h1{
     text-align: center;
@@ -111,7 +116,6 @@ body{
 }
 .images .content{
     height: 50rem;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,7 +123,6 @@ body{
 .images .content .images-slider-container{
     position: relative;
     height: 100%;
-    width: 80%;
 }
 .images .content .images-slider-container .prev, .images .content .images-slider-container .next{
     cursor: pointer;
@@ -181,6 +184,9 @@ body{
     text-align: center;
     border-bottom: 2px solid var(--primaryColor);
 }
+.services .content{
+    justify-content: center;
+}
 .services .content .card{
     padding: 1rem;
 }
@@ -188,4 +194,52 @@ body{
     font-size: 1.2rem;
     font-weight: bold;
     padding-top: 1rem;
+}
+
+/* Media Query For Mobile/ Tablets (950px or less)*/
+@media only screen and (max-width: 950px) {
+    .home .row{
+        padding: 1rem 0rem;
+    }
+    .home .row .header{
+        padding: 1rem;
+    }
+    .home .row .header h1{
+        font-size: 3rem;
+    }
+    .home .row .header p{
+        font-size: 1.5rem;
+    }
+    .home .row .banner{
+        height: 15rem;
+    }
+
+    .about .row{
+        padding: 1rem 0rem;
+    }
+    .about .banner{
+        height: 20rem;
+    }
+    .about .content .col h1{
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .about .content .col p{
+        font-size: 1rem;
+    }
+    
+    .images .row{
+        padding: 1rem 0rem;
+    }
+    .images .content{
+        height: 30rem;
+    }
+    .images .content .images-slider-container .prev, .images .content .images-slider-container .next{
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    .services .row{
+        padding: 1rem 0rem;
+    }
 }
