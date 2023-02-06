@@ -28,4 +28,26 @@ function showSlides(n) {
 const knowAboutUsButton = document.getElementById('know-more-btn');
 knowAboutUsButton.onclick = ()=>{
     document.getElementById('about-section').scrollIntoView();
-} 
+}
+
+const homeLink = document.getElementById('home-link');
+const aboutLink = document.getElementById('about-link');
+const imagesLink = document.getElementById('images-link');
+const servicesLink = document.getElementById('services-link');
+
+homeLink.onclick = ()=>{
+  toggleNavBarCollapse();
+}
+aboutLink.onclick = ()=>{
+  toggleNavBarCollapse();
+}
+imagesLink.onclick = ()=>{
+  toggleNavBarCollapse();
+}
+servicesLink.onclick = ()=>{
+  toggleNavBarCollapse();
+}
+
+function toggleNavBarCollapse(){
+  $('.collapse').collapse('hide');
+}
